@@ -7,7 +7,7 @@
 
  New planets and details can be added , removed and also updated .
 
- All Data are up to dateand  have been download from the Nasa open source
+ All Data are up to date and  have been download from the Nasa open source
   website that encourages the use of these data for educational purposes around
   the world.
 

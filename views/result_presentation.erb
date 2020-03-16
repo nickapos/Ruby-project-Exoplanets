@@ -11,18 +11,20 @@
         <link rel="stylesheet" href="/style.css">
       </head>
       <body>
-
+<table>
+  <tr><td>Host Name</td><td>Host Star</td><td>Planet ID</td><td>Details</td><td>Update</td><td>Delete</td>
         <% @planets.each do |planet| %>
-          <p>Planet Name: <%= planet.pl_name %></p>
-          <p>Host Star: <%= planet.pl_hostname %></p>
-          <p>Host Star: <%= planet.loc_rowid %></p>
-          <p><a href='/result_details/<%= planet.loc_rowid %>'>Details <%= planet.pl_name %></a></p>
-          <p><a href='/update/<%= planet.loc_rowid %>'>Update <%= planet.pl_name %></a></p>
-          <p><a href='/delete/<%= planet.loc_rowid %>'>Delete <%= planet.pl_name %></a></p>
-          <hr />
+        <tr>
+          <td> <%= planet.pl_name %></td>
+          <td> <%= planet.pl_hostname %></td>
+          <td> <%= planet.loc_rowid %></td>
+          <td><a href='/result_details/<%= planet.loc_rowid %>'>Details</a></td>
+          <td><a href='/update/<%= planet.loc_rowid %>'>Update</a></td>
+          <td><a href='/delete/<%= planet.loc_rowid %>'>Delete</a></td>
+          <tr>
         <% end %>
 
-
+</table>
       </body>
     </html>
 

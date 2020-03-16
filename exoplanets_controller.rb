@@ -33,8 +33,15 @@ end
 
  get '/delete/:id' do
    @planet =Exoplanet.find(params[:id].to_i)
+   @planet.delete
    erb(:delete)
  end
+
+ get '/insert' do
+   erb(:insert)
+ end
+
+
 
 # get '/pizza-orders/:id' do # show
 #   @order = PizzaOrder.find( params[:id] )

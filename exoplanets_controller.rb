@@ -22,10 +22,15 @@ end
     elsif user_input == "habitable_exoplanets"
     @planets = Exoplanet.habitable_exoplanets
       end
-      
+
    erb( :result_presentation )
  end
-#
+
+ get '/result_details/:id' do
+   @planet =Exoplanet.find(params[:id].to_i)
+   erb(:result_details)
+ end
+
 # get '/pizza-orders/:id' do # show
 #   @order = PizzaOrder.find( params[:id] )
 #   erb( :show )

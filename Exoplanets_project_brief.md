@@ -42,8 +42,7 @@ Jupiter  [example: Kepler-6b]
 Super giant  [example: Kepler-13b]
 
 3)Find and explore habitable planets (*habitable is the planet that can
-host life -not necessarily human life* ) and Stars that can host habitable planets
-by certain criteria.
+host life -not necessarily human life* ) and Stars that can host habitable planets by certain criteria.
 
 
 Basic Criteria of a Star Host to host a habitable planet :
@@ -61,13 +60,13 @@ metallicity out of all Star populations, and are more commonly found in the spir
 of the Milky Way galaxy. The Earth's Sun is an example of a metal-rich star
 and is considered as an intermediate
 We are looking for Population I star  metallicities ranging from approximately 1/10th to
-three times that of the Sun (i.e. from [Z/H]=-1.0 up to [Z/H]=+0.5) .
+three times that of the Sun (i.e. from dex= -0.05 up to dex= + ) .
 
 Criteria For a Planet to be considered habitable
 
 - The right temperature range of the exoplanet for there to be liquid water,
 Life seems limited to a planet equilibrium temperature range of minus 15oC
-to 115oC. In this range, liquid water can still exist under certain
+(288K) to 115oC(388K). In this range, liquid water can still exist under certain
 conditions.
 
 and

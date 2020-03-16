@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+  <html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link href="https://fonts.googleapis.com/css?family=Amatic+SC&display=swap" rel="stylesheet">
+    <title>Explore</title>
+    <link rel="stylesheet" href="/style.css">
+  </head>
+  <body>
+
+    <form method="post" action="/insert_action">
+      <table>
+        <tr>
+          <td><label>Planet Name</label></td>
+          <td><input
+            type="text"
+            name="pl_name"
+            id="pl_name"
+            value="<%= @planet.pl_name %>"
+            /></td>
+          </tr>
+          <tr>
+            <td><label>Host Star</label></td>
+            <td><input
+              type="text"
+              name="pl_hostname"
+              id="pl_hostname"
+              value="<%= @planet.pl_hostname %>"
+              /></td>
+            </tr>
+            <tr>
+            <td><label>Discovery Method</label></td>
+            <td><input
+              type="text"
+              name="pl_discmethod"
+              id="pl_discmethod"
+              value="<%= @planet.pl_discmethod %>"
+
+              /></td>
+            </tr>
+
+          <tr>
+          <td><label>Number of Planets in System</label></td>
+          <td><input
+            type="text"
+            name="pl_pnum"
+            id="pl_pnum"
+            value="<%= @planet.pl_pnum %>"
+            /></td>
+          </tr>
+          <tr>
+        <td><label>Orbital Period(in days)</label></td>
+        <td><input
+          type="text"
+          name="pl_orbper"
+          id="pl_orbper"
+          value="<%= @planet.pl_orbper %>"
+          /></td>
+        </tr>
+      <tr>
+      <td><label>Gaia Distance(in parsec)</label></td>
+      <td><input
+        type="text"
+        name="gaia_dist"
+        id="gaia_dist"
+        value="<%= @planet.gaia_dist %>"
+        /></td>
+      </tr>
+    <tr>
+    <td><label>Stellar Mass (solar mass)</label></td>
+    <td><input
+      type="text"
+      name="st_mass"
+      id="st_mass"
+      value="<%= @planet.st_mass %>"
+      /></td>
+    </tr>
+  <tr>
+  <td><label>Effective Temperature (K)</label></td>
+  <td><input
+    type="text"
+    name="st_teff"
+    id="st_teff"
+    value="<%= @planet.st_teff %>"
+    /></td>
+  </tr>
+  <tr>
+  <td><label>Stellar Radius (solar radi)</label></td>
+  <td><input
+  type="text"
+  name="st_rad"
+  id="st_rad"
+  value="<%= @planet.st_rad %>"
+  /></td>
+  </tr>
+  <tr>
+  <td><label>Planet Mass (Earth mass)</label></td>
+  <td><input
+  type="text"
+  name="pl_masse"
+  id="pl_masse"
+  value="<%= @planet.pl_masse %>"
+  /></td>
+  </tr>
+  <tr>
+  <td><label>Planet Radius (Earth radi)</label></td>
+  <td><input
+  type="text"
+  name="pl_rade"
+  id="pl_rade"
+  value="<%= @planet.pl_rade %>"
+  /></td>
+  </tr>
+  <tr>
+  <td><label>Planet-Star Radius Ratio</label></td>
+  <td><input
+  type="text"
+  name="pl_ratdor"
+  id="pl_ratdor"
+  value="<%= @planet.pl_ratdor %>"
+  /></td>
+  </tr>
+  <tr>
+  <td><label>Link to Exoplanet Encyclopaedia</label></td>
+  <td><input
+  type="text"
+  name="pl_pelink"
+  id="pl_pelink"
+  value="<%= @planet.pl_pelink %>"
+  /></td>
+  </tr>
+<tr>
+<td><label>Link to Exoplanet Data Explorer</label></td>
+<td><input
+type="text"
+name="pl_edelink"
+id="pl_edelink"
+value="<%= @planet.pl_edelink %>"
+/></td>
+</tr>
+<tr>
+<td><label>Spectral Type</label></td>
+<td><input
+type="text"
+name="st_spstr"
+id="st_spstr"
+value="<%= @planet.st_spstr %>"
+/></td>
+</tr>
+<tr>
+<td><label>Stellar Surface Gravity</label></td>
+<td><input
+type="text"
+name="st_logg"
+id="st_logg"
+value="<%= @planet.st_logg %>"
+/></td>
+</tr>
+<tr>
+<td><label>Stellar Luminosity [log(solar)</label></td>
+<td><input
+type="text"
+name="st_lum"
+id="st_lum"
+value="<%= @planet.st_lum %>"
+/></td>
+</tr>
+<tr>
+<td><label>Stellar Surface Gravity</label></td>
+<td><input
+type="text"
+name="st_logg"
+id="st_logg"
+value="<%= @planet.st_logg %>"
+/></td>
+</tr>
+<tr>
+<td><label>Spectral Type</label></td>
+<td><input
+type="text"
+name="st_spstr"
+id="st_spstr"
+value="<%= @planet.st_spstr %>"
+/></td>
+</tr>
+<tr>
+<td><label>Stellar Density [g/cm**3]</label></td>
+<td><input
+type="text"
+name="st_dens"
+id="st_dens"
+value="<%= @planet.st_dens %>"
+/></td>
+</tr>
+<tr>
+<td><label>Stellar Metallicity (dex)</label></td>
+<td><input
+type="text"
+name="st_metfe"
+id="st_metfe"
+value="<%= @planet.st_metfe %>"
+
+/></td>
+</tr>
+<tr>
+<td><label>Metallicity Ratio</label></td>
+<td><input
+type="text"
+name="st_metratio"
+id="st_metratio"
+value="<%= @planet.st_metratio %>"
+/></td>
+</tr>
+<tr>
+<td><label>Stellar Age [Gyr]</label></td>
+<td><input
+type="text"
+name="st_age"
+id="st_age"
+value="<%= @planet.st_age %>"
+/></td>
+</tr>
+
+  <tr><td></td><td><input type="submit" ></td></tr>
+</table>
+</form>
+
+
+
+      </body>
+      </html>

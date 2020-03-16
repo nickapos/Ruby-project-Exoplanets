@@ -3,7 +3,7 @@ require('pp')
 
 class Exoplanet
 
-  attr_accessor :loc_rowid, 
+  attr_accessor :loc_rowid,
   :pl_hostname,
   :pl_name,
   :pl_discmethod,
@@ -180,7 +180,7 @@ class Exoplanet
     SqlRunner.run( sql, values )
   end
 
-  def delete()
+  def self.delete()
     sql = "DELETE FROM exoplanets
     WHERE loc_rowid = $1"
     values = [@loc_rowid]
@@ -233,11 +233,11 @@ class Exoplanet
      return result
      end
 
-     def find_earth_size_planets
+     def self.find_earth_size_planets
        return self.find_by_size_category(0,1.25)
      end
 
-     def find_super_earth_planets
+     def self.find_super_earth_planets
        return self.find_by_size_category(1.25,2)
      end
 

@@ -190,7 +190,7 @@ class Exoplanet
   def self.all()
     sql = "SELECT * FROM exoplanets"
     exoplanets = SqlRunner.run( sql )
-    binding.pry
+  
     result = exoplanets.map { |exoplanet| Exoplanet.new( exoplanet ) }
     return result
   end
@@ -241,19 +241,19 @@ class Exoplanet
        return self.find_by_size_category(1.25,2)
      end
 
-     def find_mini_neptune_planets
+     def self.find_mini_neptune_planets
        return self.find_by_size_category(2,4)
      end
 
-     def find_neptune_size_planets
+     def self.find_neptune_size_planets
        return self.find_by_size_category(4,6)
      end
 
-    def find_jupiter_size_planets
+    def self.find_jupiter_size_planets
       return self.find_by_size_category(6,15)
     end
 
-    def find_super_giants_planets
+    def self.find_super_giants_planets
       return self.find_by_size_category(15,100)
     end
 
@@ -287,7 +287,7 @@ class Exoplanet
       return self.find_habitable_exoplanets(188.0,388.0,0,3.0)
      end
 
-     def self.all()
+     def self.find_planets_in_habitable_zone()
        sql = "select * from exoplanets where
        pl_ratdor*st_rad*0.0046524726>=sqrt(abs(st_lum)/1.1)
        AND pl_ratdor*st_rad*0.0046524726<=sqrt(abs(st_lum)/0.53);"

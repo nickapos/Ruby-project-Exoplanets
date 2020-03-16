@@ -33,6 +33,10 @@ end
     @planets=Exoplanet.find_jupiter_size_planets
   elsif user_input=="super_giant_size_planets"
     @planets=Exoplanet.find_super_giants_planets
+  elsif user_input=="planets_in_habitable_zone"
+    @planets=Exoplanet.find_planets_in_habitable_zone
+  elsif user_input=="retrieve_all_planets"
+    @planets=Exoplanet.all
 
       end
 

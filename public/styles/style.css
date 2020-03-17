@@ -1,15 +1,22 @@
 .intro{
 
   font-family: 'Oxanium';
-  color: #E8E9EB;
+  color: #FFF1E8;
    margin: 0 auto;
 
   padding: 100px;
-   padding-top: 18%;
+   padding-top: 16%;
   text-align: center;
-  width: 800px;
-  height: 200px;
+  width: 850px;
+  height: 300px;
   /* overflow: scroll; */
+
+}
+
+p{
+  font-family: 'Roboto';
+  color: #FFF1E8;
+
 
 }
 
@@ -28,7 +35,7 @@ ul {
   margin: 0;
   padding: 0;
   overflow: hidden;
-  background-color: #333333;
+  background-color: #C3AC9D;
 }
 
 li {
@@ -44,22 +51,22 @@ li a {
 }
 
 li a:hover {
-  background-color: #111111;
+  background-color: #403942;
 }
 
 a {
-  color: #66745D;
+  color: #3F354A;
   text-decoration: none;
  text-transform:none;
 }
 
 a:link {
-  color: #66745D;
+  color: #3F354A;
 }
 
 /* visited link */
 a:visited {
-  color: #E8871E;
+  color: #453A49;
 }
 
 /* mouse over link */
@@ -71,6 +78,12 @@ a:hover {
 a:active {
   color: #F2BD84;
 }
+
+ .insert  {margin-left: 400px;
+   margin-right: 400px;
+   font-family: 'Roboto';
+   font-size: 40px;
+   font-weight: 800;}
 
 /* body, html {
   height: 100%;
@@ -162,7 +175,7 @@ form
 }
 
 .button {
-  font-family: 'Oxanium';
+  font-family: 'Roboto';
   font-size: 16px;
   background-color: black;
   color: #E8E9EB;
@@ -170,19 +183,20 @@ form
   padding: 15px 32px;
 }
 
-.button:hover {background-color: #453A49;}
+.button:hover {background-color: #44102A;}
 
+table {
+  background-color: #E8E9EB;
+  font-family: 'Oxanium';
+  border-collapse: collapse;
+  width: 100%;
+}
 
-  /* font-family: 'Oxanium';
-  background-color: black;
-  border: none;
-  color: #E8E9EB;
-  padding: 15px 32px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  margin: 4px 2px;
-  cursor: pointer;
-  border-radius: 12px;
-} */
+th, td {
+  font-family: 'Oxanium';
+  padding: 8px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+tr:hover {background-color:#f5f5f5;}

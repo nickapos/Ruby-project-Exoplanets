@@ -2,13 +2,14 @@
     <html lang="en" dir="ltr">
       <head>
         <meta charset="utf-8">
-        <link href="https://fonts.googleapis.com/css?family=Amatic+SC&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Oxanium&display=swap" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/a836748616.js" crossorigin="anonymous"></script>
         <title>Details</title>
-        <link rel="stylesheet" href="/style.css">
+        <link rel="stylesheet" href="/styles/style.css">
       </head>
       <body>
 
-          <table>
+          <table class="table">
           <tr><td>Planet ID</td><td> <%= @planet.loc_rowid %></td></tr>
           <tr><td>Planet Name</td><td> <%= @planet.pl_name %></td></tr>
           <tr><td>Host Star</td><td> <%= @planet.pl_hostname %></td></tr>
@@ -27,7 +28,7 @@
 	        <tr><td>Link to Exoplanet Encyclopaedia</td><td> <%= @planet.pl_pelink %></td></tr>
           <tr><td>Link to Exoplanet Data Explorer</td><td> <%= @planet.pl_edelink %></td></tr>
          <tr><td>Spectral Type</td><td> <%= @planet.st_spstr %></td></tr>
-          <tr><td>	Stellar Surface Gravity</td><td> <%= @planet.st_logg %></td></tr>
+          <tr><td>Stellar Surface Gravity</td><td> <%= @planet.st_logg %></td></tr>
           <tr><td>Stellar Luminosity [log(solar)</td><td> <%= @planet.st_lum %></td></tr>
           <tr><td>Stellar Density [g/cm**3]	</td><td> <%= @planet.st_dens %></td></tr>
           <tr><td>Stellar Metallicity (dex)</td><td> <%= @planet.st_metfe %></td></tr>

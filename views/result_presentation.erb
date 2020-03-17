@@ -3,6 +3,7 @@
       <head>
         <meta charset="utf-8">
         <link href="https://fonts.googleapis.com/css?family=Oxanium&display=swap" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/a836748616.js" crossorigin="anonymous"></script>
         <title>Results</title>
         <link rel="stylesheet" href="/styles/style.css">
    </head>
@@ -11,7 +12,7 @@
 
 
 <table class="table">
-  <tr><td>Host Name</td><td>Host Star</td><td>Planet ID</td><td>Details</td><td>Update</td><td>Delete</td>
+  <tr><td>Planet Name</td><td>Host Star</td><td>Planet ID</td><td><i class="fas fa-eye"></i></td><td><i class="fas fa-hat-wizard"></i></td><td><i class="fas fa-book-dead"></i></td>
         <% @planets.each do |planet| %>
         <tr>
           <td> <%= planet.pl_name %></td>

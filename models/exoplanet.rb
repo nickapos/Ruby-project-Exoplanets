@@ -48,7 +48,7 @@ class Exoplanet
     @pl_telescope = options['pl_telescope']
     @pl_pelink = options['pl_pelink']
     @pl_edelink = options['pl_edelink']
-    @st_spstr = options['st_sp']
+    @st_spstr = options['st_spstr']
     @st_logg = options['st_logg']
     @st_lum = options['st_lum'].to_f
     @st_dens = options['st_dens'].to_f
@@ -190,7 +190,7 @@ class Exoplanet
   def self.all()
     sql = "SELECT * FROM exoplanets"
     exoplanets = SqlRunner.run( sql )
-  
+
     result = exoplanets.map { |exoplanet| Exoplanet.new( exoplanet ) }
     return result
   end

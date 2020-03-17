@@ -1,15 +1,91 @@
-body{
+.intro{
 
-  font-family: 'Orbitron';
-  background-color:#EBF5DF;
-  color: black;
-  left margin: 400px;
-  padding: 40px;
-  text-align: left;
-  width: 400px;
-  height: 1000px;
-  overflow: scroll;
+  font-family: 'Oxanium';
+  color: #E8E9EB;
+   margin: 0 auto;
+
+  padding: 100px;
+   padding-top: 18%;
+  text-align: center;
+  width: 800px;
+  height: 200px;
+  /* overflow: scroll; */
 
 }
 
-s
+ .right {
+  font-family: 'Oxanium';
+  font-size: 20px;
+  color: white;
+
+  text-decoration: none;
+ text-transform:none;
+
+ }
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333333;
+}
+
+li {
+  float: right;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #111111;
+}
+
+a {
+  color: #66745D;
+  text-decoration: none;
+ text-transform:none;
+}
+
+a:link {
+  color: #66745D;
+}
+
+/* visited link */
+a:visited {
+  color: #E8871E;
+}
+
+/* mouse over link */
+a:hover {
+  color: pink;
+}
+
+/* selected link */
+a:active {
+  color: #F2BD84;
+}
+
+body, html {
+  height: 100%;
+  margin: 0;
+}
+
+.bg {
+  /* The image used */
+  background-image: url("/images/nebula.jpg");
+
+  /* Full height */
+  height: 100%;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}

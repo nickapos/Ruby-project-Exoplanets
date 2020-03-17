@@ -163,17 +163,30 @@ a:active {
 
 
 
-form
-{
+ .form{
     position: static;
     margin-top: 600px;
     margin-left: 300px;
     margin-right: 300px;
-    /* margin-bottom: auto; */
+}
+
+#update{
+  margin-left: 300px;
+  margin-right: 300px;
 
 }
 
-.button {
+.button{
+  font-family: 'Oxanium';
+  font-size: 20px;
+  background-color: #E8E9EB;
+  color: #313638;
+  border: 2px solid #462255;
+  padding: 20px 32px;
+  
+}
+
+#button {
   font-family: 'Roboto';
   font-size: 16px;
   background-color: black;
@@ -182,7 +195,7 @@ form
   padding: 15px 32px;
 }
 
-.button:hover {
+#button:hover {
         -webkit-transform: rotateZ(-30deg);
         -ms-transform: rotateZ(-30deg);
         transform: rotateZ(-30deg);
@@ -194,6 +207,18 @@ font-size: 25px;
   font-family: 'Oxanium';
   border-collapse: collapse;
   width: 100%;
+}
+
+input[type=text] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: 2px solid #462255;
+  border-radius: 4px;
+  font-family: 'Oxanium';
+  font-size: 25px;
+
 }
 
 th, td {

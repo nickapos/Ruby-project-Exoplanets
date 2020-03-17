@@ -50,6 +50,7 @@ end
 
  get '/delete/:id' do
    @planet =Exoplanet.find(params[:id].to_i)
+   # binding.pry
    @planet.delete
    erb(:delete)
  end
@@ -74,35 +75,3 @@ end
    @planet.update
    erb(:update_action)
  end
-
-
-
-
-
-
-# get '/pizza-orders/:id' do # show
-#   @order = PizzaOrder.find( params[:id] )
-#   erb( :show )
-# end
-#
-# post '/pizza-orders' do # create
-#   @order = PizzaOrder.new( params )
-#   @order.save()
-#   erb( :create )
-# end
-#
-# get '/pizza-orders/:id/edit' do # edit
-#   @order = PizzaOrder.find( params[:id] )
-#   erb( :edit )
-# end
-#
-# post '/pizza-orders/:id' do # update
-#   PizzaOrder.new( params ).update
-#   redirect to '/pizza-orders'
-# end
-#
-# post '/pizza-orders/:id/delete' do # delete
-#   order = PizzaOrder.find( params[:id] )
-#   order.delete()
-#   redirect to '/pizza-orders'
-# end

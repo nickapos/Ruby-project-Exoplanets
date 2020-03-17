@@ -180,7 +180,7 @@ class Exoplanet
     SqlRunner.run( sql, values )
   end
 
-  def self.delete()
+  def delete()
     sql = "DELETE FROM exoplanets
     WHERE loc_rowid = $1"
     values = [@loc_rowid]

@@ -84,10 +84,6 @@ a:active {
    font-size: 40px;
    font-weight: 800;}
 
-/* body, html {
-  height: 100%;
-
-} */
 
 #bg {
   /* The image used */
@@ -115,6 +111,23 @@ a:active {
   min-height: 100%;
 }
 
+#bg3{
+  background-image: url("/images/death.jpg");
+
+  position: fixed;
+  top: 0;
+  left: 0;
+  /* Preserve aspet ratio */
+  min-width: 100%;
+  min-height: 100%;
+
+  font-family: 'Oxanium';
+  font-size: 50px;
+  color: white;
+  position: absolute;
+  
+   margin-right: -50%;
+}
 
 
 .select-css {
@@ -183,7 +196,7 @@ a:active {
   color: #313638;
   border: 2px solid #462255;
   padding: 20px 32px;
-  
+
 }
 
 #button {

@@ -3,13 +3,17 @@
 <head>
   <meta charset="utf-8">
   <link href="https://fonts.googleapis.com/css?family=Oxanium&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/a836748616.js" crossorigin="anonymous"></script>
   <title>Explore</title>
   <link rel="stylesheet" href="/styles/style.css">
 </head>
 <body>
 
-  <form method="post" action="/result_presentation">
-    <select id="find_operation" name="find_operation">
+
+   <div class="form">
+  <form  method="post" action="/result_presentation">
+
+    <select class="select-css" id="find_operation" name="find_operation">
       <option value="host_stars">Stars that could host habitable wolds</option>
       <option value="habitable_exoplanets">Habitable Planets</option>
       <option value="retrieve_all_planets">All Planets</option>
@@ -20,14 +24,15 @@
       <option value="jupiter_size_planets">Explore all Jupiter  size planets</option>
       <option value="super_giant_size_planets">Explore all Super giants </option>
       <option value="planets_in_habitable_zone">Stars with planets in their habitable zone </option>
-
-
     </select>
-    <input type="submit" >
+    <br>
+    <br>
+    <input class="submit" type="submit" >
+
   </form>
+   </div>
 
-
-  <p><a href="/insert">Insert new planet.</a></p>
+  <p><a href="/insert"><i class="fab fa-sketch"></i>Insert new planet.</a></p>
 
 </body>
 </html>

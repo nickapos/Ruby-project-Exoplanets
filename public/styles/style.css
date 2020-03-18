@@ -239,6 +239,12 @@ font-size: 25px;
   width: 100%;
 }
 
+.documentation,th,td {
+ border: 2px solid black;
+ width: 80%;
+ font-size: 20px;
+
+}
 input[type=text] {
   width: 100%;
   padding: 12px 20px;

@@ -15,6 +15,7 @@
           <tr><td>Host Star</td><td> <%= @planet.pl_hostname %></td></tr>
           <tr><td> Discovery Method</td><td><%= @planet.pl_discmethod %></td></tr>
           <tr><td>Planets in System (num)</td><td> <%= @planet.pl_pnum %></td></tr>
+          <tr><td>Planet Equilibrium Temperature [K]</td><td> <%= @planet.pl_eqt %></td></tr>
           <tr><td>Orbital Period (days)</td><td> <%= @planet.pl_orbper %></td></tr>
           <tr><td>Gaia Distance (pc)</td><td><%= @planet.gaia_dist %></td></tr>
           <tr><td>Effective Temperature (K)</td><td><%= @planet.st_teff %></td></tr>
@@ -22,7 +23,7 @@
           <tr><td>Stellar Radius (solar radi)</td><td> <%= @planet.st_rad %></td></tr>
           <tr><td>Planet Mass (Earth mass) </td><td> <%= @planet.pl_masse %></td></tr>
           <tr><td>Planet Radius (Earth radi)</td><td> <%= @planet.pl_rade %></td></tr>
-          <tr><td>Planet-Star Radius Ratio</td><td> <%= @planet.pl_ratdor %></td></tr>
+          <tr><td>Planet-Star Distance over Ratio</td><td> <%= @planet.pl_ratdor %></td></tr>
           <tr><td>Year of Discovery</td><td> <%= @planet.pl_disc %></td></tr>
           <tr><td>Discovery Telescope</td><td> <%= @planet.pl_telescope %></td></tr>
 	        <tr><td>Link to Exoplanet Encyclopaedia</td><td> <%= @planet.pl_pelink %></td></tr>

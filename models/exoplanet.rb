@@ -296,5 +296,14 @@ class Exoplanet
        return result
      end
 
+     def exists_in_db
+       sql = "SELECT * FROM exoplanets
+       WHERE pl_name = $1"
+       values = [@pl_name]
+       exoplanet = SqlRunner.run( sql, values )
+       result = Exoplanet.new( exoplanet.first )
+       return result
+     end
+
 
      end

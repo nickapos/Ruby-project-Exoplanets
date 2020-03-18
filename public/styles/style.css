@@ -12,6 +12,21 @@
 
 }
 
+.search{
+ font-family: 'Roboto';
+ color: #FFF1E8;
+  margin: 0 auto;
+  font-size: 20px;
+
+
+ /* padding: 100px; */
+  /* padding-top: 16%; */
+ text-align: center;
+ width: 1000px;
+ height: 300px;
+
+}
+
 p{
   font-family: 'Roboto';
   color: #FFF1E8;
@@ -112,21 +127,21 @@ a:active {
 }
 
 #bg3{
-  background-image: url("/images/death.jpg");
+  background-image: url("/images/background2.jpg");
 
-  position: fixed;
-  top: 0;
-  left: 0;
+  /* position: fixed; */
+  /* top: 0;
+  left:0; */
+
   /* Preserve aspet ratio */
   min-width: 100%;
-  min-height: 100%;
+  height:auto;
 
-  font-family: 'Oxanium';
+  font-family: 'Gloria Hallelujah', cursive;
   font-size: 50px;
   color: white;
-  position: absolute;
-  
-   margin-right: -50%;
+  text-align: center;
+
 }
 
 
@@ -178,7 +193,7 @@ a:active {
 
  .form{
     position: static;
-    margin-top: 600px;
+    margin-top: 200px;
     margin-left: 300px;
     margin-right: 300px;
 }

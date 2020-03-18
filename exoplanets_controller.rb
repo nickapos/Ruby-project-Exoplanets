@@ -15,6 +15,10 @@ get '/search' do
   erb( :search )
 end
 
+get '/documentation' do
+  erb( :documentation)
+end
+
  post '/result_presentation' do
    user_input=params[:find_operation]
    if user_input == "host_stars"

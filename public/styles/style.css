@@ -239,10 +239,9 @@ font-size: 25px;
   width: 100%;
 }
 
-.documentation,th,td {
- border: 2px solid black;
- width: 80%;
- font-size: 20px;
+.documentation {
+
+
 
 }
 input[type=text] {
@@ -255,6 +254,11 @@ input[type=text] {
   font-family: 'Oxanium';
   font-size: 25px;
 
+}
+
+caption{
+  font-family: 'Oxanium';
+  font-size: 40px;
 }
 
 th, td {

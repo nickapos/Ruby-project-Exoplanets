@@ -14,14 +14,10 @@
  The exoplanets table is a work in progress as more confirmed planets
  are added every week
 
- ---------message to instructor---------------------------------------
-
  (The data were downloaded as csv and imported using psql (copy - from)
  insert-from-csv.sql and table.sql are in the  project folder, but I might
  need to change some columns.
  The final table combines more then 4000 rows and 38 columns )
-________________________________________________________________________
-
 
  MVP
 
@@ -33,13 +29,15 @@ distance from earth and 10 more data fields.
 plus Links to Exoplanet Data Encyclopaedia for all confirmed exoplanets
 (example : http://exoplanet.eu/catalog/epic_249893012_b/)
 
-2)Find all planets in each of these astronomic size categories:
-Earth size planets [example: Kepler-10b]
-Super-Earths [example: Kepler-11b]
-Mini-Neptune  [example: Kepler-11c]
-Neptune  [example: Kepler-4b]
-Jupiter  [example: Kepler-6b]
-Super giant  [example: Kepler-13b]
+You can manually delete and edit planets and their details also update planet data fields.
+
+2)Retrieve all planets in each of these astronomic size categories:
+Earth size planets (0 to 1.25 times Earth size)[example: Kepler-10b]
+Super-Earths (1.25 to 2 times Earth size)[example: Kepler-11b]
+Mini-Neptune (2 to 4 times Earth size) [example: Kepler-11c]
+Neptune (4-6 times Earth size) [example: Kepler-4b]
+Jupiter (6-15 times Earth size) [example: Kepler-6b]
+Super giant (more than 15 times Earth size) [example: Kepler-13b]
 
 3)Find and explore habitable planets (*habitable is the planet that can
 host life -not necessarily human life* ) and Stars that can host habitable planets by certain criteria.
@@ -106,13 +104,19 @@ or Kepler candidate planets:
 https://exoplanetarchive.ipac.caltech.edu/cgi-bin/TblView/nph-tblView?app=ExoTbls&config=cumulative
 or K2 candidate planets or even hypothetical planets)
 
-Delete and edit planets and their details also update planet data fields. .
-
 
 Possible Extensions
 
+Automatically update table.
 ApI call with Wget to retrieve new CSV date as they are being updated online.
 CRON will schedule weekly execution and sql-insert the new data from the
 Nasa website (they have their Data Available Through an API)
 
-Any other possible extension ideas are very welcome.
+________________________________________________________________________________
+What is planitary habitability
+
+https://en.wikipedia.org/wiki/Planetary_habitability
+
+What is a habitable zone :
+
+https://en.wikipedia.org/wiki/Circumstellar_habitable_zone

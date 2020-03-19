@@ -113,7 +113,7 @@ CRON will schedule weekly execution and sql-insert the new data from the
 Nasa website (they have their Data Available Through an API)
 
 ________________________________________________________________________________
-What is planitary habitability
+What is planetary habitability
 
 https://en.wikipedia.org/wiki/Planetary_habitability
 

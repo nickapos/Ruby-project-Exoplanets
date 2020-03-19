@@ -15,9 +15,8 @@
  are added every week
 
  (The data were downloaded as csv and imported using psql (copy - from)
- insert-from-csv.sql and table.sql are in the  project folder, but I might
- need to change some columns.
- The final table combines more then 4000 rows and 38 columns )
+ insert-from-csv.sql and table.sql are in the  project folder.
+ The final table combines more then 4000 rows and 20 columns )
 
  MVP
 
@@ -58,7 +57,7 @@ metallicity out of all Star populations, and are more commonly found in the spir
 of the Milky Way galaxy. The Earth's Sun is an example of a metal-rich star
 and is considered as an intermediate
 We are looking for Population I star  metallicities ranging from approximately 1/10th to
-three times that of the Sun (i.e. from dex= -0.05 up to dex= + ) .
+three times that of the Sun (i.e. from dex= -0.05 up to dex=0.1+ ) .
 
 Criteria For a Planet to be considered habitable
 

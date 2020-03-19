@@ -270,7 +270,7 @@ class Exoplanet
    end
 
      def self.host_stars
-      return self.find_host_stars_that_could_host_habitable_wolds(-0.05,0.1)
+      return self.find_host_stars_that_could_host_habitable_wolds(-0.08,0.1)
      end
 
      def self.find_habitable_exoplanets(lower_limit_pl_eqt,upper_limit_pl_eqt,lower_limit_pl_rade,upper_limit_pl_rade)

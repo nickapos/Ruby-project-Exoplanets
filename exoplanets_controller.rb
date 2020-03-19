@@ -21,17 +21,19 @@ end
 
  post '/result_presentation' do
    user_input=params[:find_operation]
+   puts user_input
    if user_input == "host_stars"
      @planets = Exoplanet.host_stars
     elsif user_input == "habitable_exoplanets"
     @planets = Exoplanet.habitable_exoplanets
+    
   elsif user_input=="earth_size_planets"
     @planets=Exoplanet.find_earth_size_planets
   elsif user_input=="superearth_size_planets"
     @planets=Exoplanet.find_super_earth_planets
   elsif user_input=="mini_neptune_size_planets"
     @planets=Exoplanet.find_mini_neptune_planets
-  elsif user_input=="neptune _size_planets"
+  elsif user_input=="neptune_size_planets"
     @planets=Exoplanet.find_neptune_size_planets
   elsif user_input=="jupiter_size_planets"
     @planets=Exoplanet.find_jupiter_size_planets

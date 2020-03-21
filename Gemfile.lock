@@ -39,6 +39,7 @@ PLATFORMS
 DEPENDENCIES
   pg!
   pry-byebug!
+  rack!
   sinatra!
   sinatra-contrib!
 
